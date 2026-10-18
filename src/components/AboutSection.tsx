@@ -2,8 +2,24 @@ import React, { useState } from 'react';
 import { BookOpen, Sparkles, Flame, Compass, Brain, Smile, AlertCircle, ChefHat } from 'lucide-react';
 import { sounds } from '../utils/audio';
 
+
 export const AboutSection: React.FC = () => {
   const [selectedPillar, setSelectedPillar] = useState<'smart' | 'playful' | 'mischievous' | 'curious'>('smart');
+
+  const dragonFacts = [
+    "Vanilla Truffle is a baby dragon with a passion for cooking and a flair for mischief.",
+    "He was born from a magical mishap in Chef Odin's kitchen, which infused him with culinary magic.",
+    "Vanilla has a unique ability to breathe gentle flames that can cook food without burning it.",
+    "He loves experimenting with flavors and often creates unexpected culinary delights.",
+    "Despite his small size, Vanilla has a big personality and a love for adventure in the kitchen."
+  ]
+
+  const [factIndex, setFactIndex] = useState(0);
+
+  const handleNextFact = () => {
+    sounds.playBubble();
+    setFactIndex((prevIndex) => (prevIndex + 1) % dragonFacts.length);
+  };
 
   const personalityPillars = {
     smart: {
@@ -119,6 +135,25 @@ export const AboutSection: React.FC = () => {
               </dl>
             </div>
           </div>
+        </div>
+
+        <div className="mt-6 rounded-2xl border border-purple-200 bg-white/80 p-5 text-center dark:border-purple-800 dark:bg-purple-900/40">
+          <h3 className="font-bold text-purple-950 dark:text-white">
+            A Little Dragon Fact
+          </h3>
+          <p
+            aria-live="polite"
+            className="mt-2 text-sm text-purple-800 dark:text-purple-200"
+          >
+            {dragonFacts[factIndex]}
+          </p>
+          <button
+            type="button"
+            onClick={handleNextFact}
+            className="mt-4 rounded-lg bg-purple-700 px-4 py-2 text-sm font-semibold text-white hover:bg-purple-800"
+          >
+            Next fact
+          </button>
         </div>
       </section>
 
