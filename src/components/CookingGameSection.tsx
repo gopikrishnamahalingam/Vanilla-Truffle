@@ -195,7 +195,7 @@ export const CookingGameSection: React.FC<CookingGameSectionProps> = ({
       <div className="text-center max-w-2xl mx-auto mb-10">
         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-100 dark:bg-purple-950/70 border border-purple-200 dark:border-purple-800 text-xs font-bold uppercase tracking-widest text-purple-700 dark:text-purple-300 mb-2">
           <Utensils className="w-3.5 h-3.5" />
-          <span>Interactive Mini-Game</span>
+          <span>Interactive Kitchen Lab</span>
         </div>
         <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-purple-950 dark:text-white mt-1">
           ✨ Vanilla Truffle’s Magical Kitchen Lab ✨

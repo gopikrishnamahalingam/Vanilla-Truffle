@@ -64,8 +64,7 @@ export const FooterSection: React.FC = () => {
               Vanilla Truffle Voice 
             </p>
             <p>
-            Youtube Channel: 3D-Disco <a href="https://www.youtube.com/watch?v=UbzM2g5R390">Link</a>
-
+              YouTube Channel: 3D-Disco <a href="https://www.youtube.com/watch?v=UbzM2g5R390">Link</a>
             </p>
           </div>
 

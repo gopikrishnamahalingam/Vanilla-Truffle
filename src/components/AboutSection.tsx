@@ -34,9 +34,11 @@ export const AboutSection: React.FC = () => {
       {/* SECTION 1: ABOUT & FIVE-POINT CHARACTER SHEET */}
       <section id="about" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-20">
         <div className="text-center max-w-2xl mx-auto mb-10">
-          <p className="text-xs font-bold uppercase tracking-widest text-purple-600 dark:text-purple-400">
-            Chapter 01 · Origin & Identity
-          </p>
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-100 dark:bg-purple-950/70 border border-purple-200 dark:border-purple-800 text-xs font-bold uppercase tracking-widest text-purple-700 dark:text-purple-300 mb-2">
+            <p className="text-xs font-bold uppercase tracking-widest text-purple-600 dark:text-purple-400">
+              Chapter 01 · Origin & Identity
+            </p>
+          </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-purple-950 dark:text-white mt-1">
             Meet the Chef Behind the Magic
           </h2>
@@ -123,9 +125,11 @@ export const AboutSection: React.FC = () => {
       {/* SECTION 2: PERSONALITY */}
       <section id="personality" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-20">
         <div className="text-center max-w-2xl mx-auto mb-10">
-          <p className="text-xs font-bold uppercase tracking-widest text-purple-600 dark:text-purple-400">
-            Chapter 02 · Temperament
-          </p>
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-100 dark:bg-purple-950/70 border border-purple-200 dark:border-purple-800 text-xs font-bold uppercase tracking-widest text-purple-700 dark:text-purple-300 mb-2">
+            <p className="text-xs font-bold uppercase tracking-widest text-purple-600 dark:text-purple-400">
+              Chapter 02 · Temperament
+            </p>
+          </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-purple-950 dark:text-white mt-1">
             Vanilla’s 4 Quirky Personalities
           </h2>
