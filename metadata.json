@@ -1,0 +1,8 @@
+{
+  "name": "Vanilla Truffle’s Magical Kitchen",
+  "description": "An interactive magical portfolio and kitchen adventure with Vanilla Truffle, the tiny purple baby dragon and mischievous junior chef.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

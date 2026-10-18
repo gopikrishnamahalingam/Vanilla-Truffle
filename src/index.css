@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-primary: #F3E8FF;
+    --bg-secondary: #E9D5FF;
+    --text-primary: #3B1764;
+    --text-secondary: #6B21A8;
+    --surface: #FFFAFF;
+    --border: #E0C7FF;
+  }
+
+  .dark, [data-theme="dark"] {
+    --bg-primary: #150926;
+    --bg-secondary: #221038;
+    --text-primary: #F3E8FF;
+    --text-secondary: #D8C5ED;
+    --surface: #24133A;
+    --border: #4A2B68;
+    color-scheme: dark;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  html.dark body, body.dark {
+    background-color: #150926 !important;
+    color: #F3E8FF !important;
+  }
+
+
+  h1, h2, h3, .font-display {
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .font-serif-story {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-handwriting {
+    font-family: 'Caveat', cursive;
+  }
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes sparkleSpin {
+  0% { transform: scale(0.8) rotate(0deg); opacity: 0.6; }
+  50% { transform: scale(1.15) rotate(180deg); opacity: 1; }
+  100% { transform: scale(0.8) rotate(360deg); opacity: 0.6; }
+}
+
+@keyframes bubbleFloat {
+  0% { transform: translateY(0) scale(0.9); opacity: 0.7; }
+  50% { transform: translateY(-12px) scale(1.05); opacity: 1; }
+  100% { transform: translateY(0) scale(0.9); opacity: 0.7; }
+}
+
+@keyframes flameBurst {
+  0% { transform: scale(0.8); opacity: 0.2; }
+  50% { transform: scale(1.2); opacity: 0.95; }
+  100% { transform: scale(1); opacity: 0; }
+}
+
+.animate-float {
+  animation: floatGentle 4s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: floatGentle 4.5s ease-in-out 1.5s infinite;
+}
+
+.animate-sparkle {
+  animation: sparkleSpin 3s linear infinite;
+}
+
+.animate-bubble {
+  animation: bubbleFloat 3s ease-in-out infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(139, 92, 246, 0.08);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.35);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.6);
+}
+
+/* Hide default cursor on devices that support custom pointer hover, but keep normal on touch */
+@media (hover: hover) and (pointer: fine) {
+  body.custom-cursor-active {
+    cursor: none;
+  }
+  body.custom-cursor-active button,
+  body.custom-cursor-active a,
+  body.custom-cursor-active input,
+  body.custom-cursor-active select {
+    cursor: none;
+  }
+}
