@@ -700,28 +700,28 @@ export const DragonChatSection: React.FC = () => {
                   <div className="w-full h-full rounded-2xl bg-white dark:bg-[#1f1035] flex items-center justify-center text-xl select-none">
                     {activeMood === 'happy'  && (
           <img
-            src="../../public/assets/images/Vanilla-Truffle.jpeg"
+            src="/assets/images/Vanilla-Truffle.jpeg"
             alt="Happy"
             className="aspect-square rounded-full w-12 h-12 object-contain"
           />
         )}
                     {activeMood === 'mischievous' && (
           <img
-            src="../../public/assets/images/Vanilla-Truffle.jpeg"
+            src="/assets/images/Vanilla-Truffle.jpeg"
             alt="Happy"
             className="aspect-square rounded-full w-12 h-12 object-contain"
           />
         )}
                     {activeMood === 'surprised'  && (
           <img
-            src="../../public/assets/images/Vanilla-Truffle.jpeg"
+            src="/assets/images/Vanilla-Truffle.jpeg"
             alt="Happy"
             className="aspect-square rounded-full w-12 h-12 object-contain"
           />
         )}
                     {activeMood === 'sleepy'  && (
           <img
-            src="../../public/assets/images/Vanilla-Truffle.jpeg"
+            src="/assets/images/Vanilla-Truffle.jpeg"
             alt="Happy"
             className="aspect-square rounded-full w-12 h-12 object-contain"
           />
